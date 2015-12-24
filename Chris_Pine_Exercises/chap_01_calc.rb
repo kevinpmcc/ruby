@@ -13,5 +13,4 @@ puts 60 * 60 * 24 * 365 * 33
 puts 1 * 365 * 90
 
 # if i am 1235million seconds old, how old am I?
-
 puts 1235000000 / (60 * 60 * 24 * 365)
