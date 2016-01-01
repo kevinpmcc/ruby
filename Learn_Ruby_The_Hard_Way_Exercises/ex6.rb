@@ -21,13 +21,17 @@ puts "I said: #{x}."
 # print the string which contains the variable y
 puts "I also said: '#{y}'."
 
-# sets variable hilarious to false
+# sets variable hilarious equal to false
 hilarious = false
-joke_evaluation = "Isn't this joke so funny?! #{hilarious}"
 
+# sets variable joke_evaluation to the string with variable hilarious in it
+joke_evaluation = "Isn't this joke so funny?! #{hilarious}"
+# print the variable joke_evaluation
 puts joke_evaluation
 
+# sets variable w equal to the string
 w = "This is the left side of..."
+# sets variable e equal to the string
 e = "a string with a right side."
-
+# print variable w immediately followed by variable e
 puts w + e
