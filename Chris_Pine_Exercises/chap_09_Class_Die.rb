@@ -1,7 +1,7 @@
 class Die
 
-	def roll
-		1 + rand(6)
+	def roll #this is how you call the class
+		1 + rand(6) #and what the class does each time its called
 	end
 
 end
