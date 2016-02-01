@@ -10,8 +10,12 @@ puts "What month were you born? (Please use the number 1 for Jan, 2 for Feb etc.
 month = gets.chomp
 
 # ask user what date they were born
-puts "What date were you born? (Please use number only)" # again we'll improve this to make it easier for people
+puts "What date were you born?" # again we'll improve this to make it easier for people
 date = gets.chomp
+date = date.gsub(/[a-z]/, "")
+
+
+
 
 # work out how many seconds from now ago they were born
 # time now minus the time then
@@ -22,7 +26,7 @@ secs_old = time - Time.mktime(year, month, date) # how many seconds old
 
 years_old = secs_old / 60 / 60 / 24 / 365 # how many years old 
 
-puts "SPANK"/n * years_old.floor
+puts "SPANK!\n" * years_old.floor
 
 
 
