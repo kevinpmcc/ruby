@@ -6,6 +6,26 @@ class Dragon
 		@stuffInIntestine	=  0 # He doesn't need to go.
 
 		puts @name + ' is born.'
+
+		iwannaquit = false
+
+		while iwannaquit == false
+		puts "What would you like to do?"
+		response = gets.chomp
+			if response == "feed"
+				feed
+			elsif response == "walk"
+				walk
+			elsif response == "bed"
+				putToBed
+			elsif response == "toss"
+				toss
+			elsif response == "iwannaquit"
+				iwannaquit = true
+				exit
+
+			end
+		end
 	end
 
 	def feed
@@ -102,13 +122,6 @@ class Dragon
 	end
 end
 
+# Write a program so that you can interact with your baby dragon. You should be able to enter commands like  feed and walk, and have those methods be called on your dragon. Of course, since what you are inputting are just strings, you will have to have some sort of method dispatch, where your program checks which string was entered, and then calls the appropriate method.
+
 pet = Dragon.new 'Norbert'
-pet.feed
-pet.toss
-pet.walk
-pet.putToBed
-pet.rock
-pet.putToBed
-pet.putToBed
-pet.putToBed
-pet.putToBed
